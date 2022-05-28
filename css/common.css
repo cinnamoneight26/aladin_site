@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+/*----------------------------768px~ 화면*/
+
+@media screen and (min-width:768px)
+{
+/* 초기화 */
+* {margin:0; padding:0;}
+body {font-family: 'Nanum Gothic', sans-serif; font-size:12px;}
+li {list-style:none; border:0px;}
+a {text-decoration:none;}
+img {border:0;}
+
+h3 {font-size:14px; font-weight:bold;}
+
+/* 중앙정렬 */
+#main_header {width:1200px; margin:0 auto;
+
+/*절대 좌표*/
+height:110px; position:relative;}
+
+#main_header > #logo1 {position:absolute; left:20px; top:20px;}
+#main_header > #onlineshop {position:absolute; right:10px; top:20px; background:#80c931;
+							color:#fff; font-size:14px; height:30px; line-height:30px;}
+#main_header > #onlineshop a {color:#fff; padding:0 30px;}
+#main_header > #sub_menu {position:absolute; right:0px; bottom:20px;}
+
+#sub_menu > ul {overflow:hidden;}
+#sub_menu > ul > li {float:left; position:relative;}
+#sub_menu > ul > li > a {display:block; padding:2px 10px;  border:0;  color:#2483c4; font-size:12px;}
+#sub_menu > ul > li > a:hover {background:#fff; color:#2483c4; text-decoration:underline;}
+#sub_menu > #menu > li > a::before {display:block; position:absolute; top:2px; left:-1px;
+						width:1px; height:14px; border-left:1px solid #2483c4; content:'';}
+
+/**/
+#main_nav {background:#2483c4; min-width:1200px;}
+#main_div {min-width:1200px; margin:0 auto; height:60px;}
+#main_nav_ul {text-align:center; overflow:hidden;}
+#main_nav_ul > li {float:left; border:0px; color:#fff; font-size:14pt; font-weight:bold; width:16.66%;}
+#main_nav_ul > li > a {display:block; color:#fff; line-height:60px;}
+#main_nav_ul > li:hover > a {color:#2483c4; background:#fff; }
+/**/
+
+
+footer {padding-top:10px; border-top:1px solid #2483c4;}
+#footer_wrap {overflow:hidden; margin:0 auto; width:1200px; margin-bottom:20px; }
+
+#logo2 {float:left;}
+
+#copy {float:right; width:900px;  position:relative;}
+#copy__ {color:#464646; text-align:right; width:1200px; float:right; padding:15px; display:block;}
+
+#copy_top {padding-right:10px; position:absolute; right:0;}
+#copy_top > ul {overflow:hidden;}
+#copy_top > ul > li {float:left; position:relative;}
+#copy_top > ul > li > a {color:#464646; padding:0px 15px; font-size:12px;}
+
+#copy_top > ul > li::before {display:block; position:absolute; top:1px; left:-1px;
+								width:1px; height:14px; border-left:1px solid #464646; content:'';}
+
+#copy_top > ul > li > a:hover {color:#2483c4;} 
+
+#copy_bottom {padding-right:20px; position:absolute; top:14px; right:0;}
+#copy_bottom > ul {overflow:hidden; padding-top:20px;}
+#copy_bottom > ul > li {float:left;  position:relative; text-align:center; color:#464646; font-size:12px;}
+#copy_bottom > ul > li:last-child {display:none;}
+#copy_bottom > ul > li::before {display:block; position:absolute; top:1px; left:-1px;
+								width:1px; height:14px; border-left:1px solid #464646; content:'';}
+}/* 0~767px 화면 끝 */
+
+
+
+/*미디어 쿼리---------------------------  */
+/*----------------------------0~767px 화면*/
+
+@media screen and (max-width:767px){
+
+/* 초기화 */
+* {margin:0; padding:0;}
+body {font-family: 'Nanum Gothic', sans-serif; font-size:12px;}
+li {list-style:none; border:0px;}
+a {text-decoration:none;}
+img {border:0;}
+
+
+#main_header {width:100%; max-width:767px; min-width:320px; margin:0 auto; height:110px;}
+
+#logo1 {width:188px; height:auto; margin:0 auto;}
+#logo1 h1 {width:188px; height:auto; margin:0;}
+#logo1 h1 a img {width:100%; height:auto;}
+
+#onlineshop {width:188px; height:auto; background:#80c931; 
+				margin:0 auto;}
+#onlineshop a {display:block; color:#fff; text-decoration:none;
+				text-align:center; height:25px; line-height:25px;}
+
+#sub_menu {width:100%; display:none;}
+#sub_menu ul {overflow:hidden;}
+#sub_menu ul li {float:left;}
+#sub_menu > ul > li > a {display:block; color:#2483c4;}
+#sub_menu > ul > li > a:hover {background:#fff; color:#2483c4; text-decoration:underline;}
+#sub_menu > ul > li:first-child {display:none;}
+#sub_menu > ul > li:last-child {display:none;}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++*/
+
+footer {padding-top:10px;}
+
+#footer_wrap {overflow:hidden; margin:0 auto; width:100%; max-width:767px; min-width:320px; height:auto;}
+
+#logo2 {width:264px; height:auto; margin:0 auto;}
+#logo2 a img {width:100%; height:auto;}
+
+
+#copy {float:right; width:100%; height:auto; position:relative;}
+
+#copy_top {}
+#copy_top > ul {margin:0; padding:0; text-align:center;}
+#copy_top > ul > li {display:inline-block; text-align:center;}
+#copy_top > ul > li:first-child {padding:5px;}
+#copy_top > ul > li:nth-of-type(2) {padding:5px;}
+#copy_top > ul > li:nth-of-type(3) {padding:5px;}
+#copy_top > ul > li:nth-of-type(4) {display:none;}
+#copy_top > ul > li:nth-of-type(5) {display:none;}
+#copy_top > ul > li:nth-of-type(6) {display:none;}
+#copy_top > ul > li:last-child {display:none;}
+
+#copy_top > ul > li > a {color:#464646; text-decoration:none;}
+
+
+#copy_bottom {margin-top:10px;}
+#copy_bottom > ul {margin:0; padding:0; text-align:center;}
+#copy_bottom > ul > li {text-align:center; color:#464646;}
+#copy_bottom > ul > li:nth-of-type(2) {display:none;}
+#copy_bottom > ul > li:nth-of-type(3) {display:none;}
+#copy_bottom > ul > li:last-child {margin-top:10px; height:30px; line-height:30px;
+				text-align:center; font-weight:bold;
+				background:#2483c4; color:#fff; padding:5px;}
+
+#copy_bottom > ul > li:last-child a {width:100%; display:block;}
+
+#copy_bottom > ul > li > a {color:#fff; text-decoration:none;}
+
+#copy__ {display:none;}
+
+}/* 0~767px 화면 끝 */
+
+
+
+

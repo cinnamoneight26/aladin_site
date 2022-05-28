@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>[알라딘]좋은 책을 고르는 방법, 알라딘</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=devoce-width, initial-scale=1.0">
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){// jQuery 시작
+		var cnt=0;
+		$("#h_all h2.selected").hide();
+		$("#y_div > ul > li").click(function(){
+		  cnt= $(this).index();	
+		//$("#h_all h2").toggleClass("selected");
+		$("#h_a > div a h2").removeClass("selected");
+		
+			$("#h_a > div:eq("+cnt+") a h2").addClass("selected");
+		
+		});
+
+
+
+		// 화면이 200px 이동시 go top 버튼 보임
+		var offset = 200; 
+		$(window).scroll(function() {
+			 var st = $(this).scrollTop();
+			if (st > offset) {  
+				$('.go_top').fadeIn(500);  
+			} else {  
+				$('.go_top').fadeOut(500);  
+			}});
+
+		// 맨위로 화면 스크롤
+		$('.go_top').click(function() {   
+			$('html, body').animate({
+			scrollTop: 0
+			}, 500); 
+			
+			$("#h_a > div a h2").removeClass("selected");
+			return false; });
+
+
+	}); //jQuery 종결 
+	</script>
+
+<link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/history_style.css" media="all" />
+
+<!--새창크기정의-->
+<script type="text/javascript">
+function openit() {
+newWindow = window.open('http://www.aladin.co.kr/login/wlogin_popup.aspx', '로그인', 'width=780,height=444');
+}
+</script>
+
+</head>
+
+<body>
+<!-- header 영역 -->	
+  <? include "header.html" ?> 
+<!-- header 끝 -->
+
+<!-- main nav 영역 -->
+<nav id="main_nav">
+	<div id="main_div">
+		<ul id="main_nav_ul">
+			<li><a href="outline.html" title="개요">개요</a></li>
+			<li><a href="vision.html" title="비전">비전</a></li>
+			<li><a href="#" title="연혁">연혁</a></li>
+			<li><a href="ci.html" title="CI 소개">CI 소개</a></li>
+			<li><a href="service.html" title="서비스 소개">서비스 소개</a></li>
+			<li><a href="#" title="언론 기사">언론 기사</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 상단 바 영역 -->
+<div id="outline_all">
+	<div id="line">
+			<h1>
+				<a href="main.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a>&gt;&nbsp;&nbsp;연혁
+			</h1>
+	</div><!-- line 끝 -->
+
+<!-- 본문 영역 -->
+<div class="go_top"><a href="#">TOP</a></div>
+
+
+<div id="h_all">
+	<div id="y_div">
+		<ul>
+			<li><a href="#h_2015">15</a></li>
+			<li><a href="#h_2014">14</a></li>
+			<li><a href="#h_2013">13</a></li>
+			<li><a href="#h_2012">12</a></li>
+			<li><a href="#h_2011">11</a></li>
+			<li><a href="#h_2010">10</a></li>
+			<li><a href="#h_2009">09</a></li>
+			<li><a href="#h_2008">08</a></li>
+			<li><a href="#h_2007">07</a></li>
+			<li><a href="#h_2006">06</a></li>
+			<li><a href="#h_2005">05</a></li>
+			<li><a href="#h_2004">04</a></li>
+			<li><a href="#h_2003">03</a></li>
+			<li><a href="#h_2002">02</a></li>
+			<li><a href="#h_2001">01</a></li>
+			<li><a href="#h_2000">00</a></li>
+			<li><a href="#h_1999">99</a></li>
+		</ul>
+	</div>
+	<div id="h_a">
+
+		<div class="h_aa">
+			 <a id="h_2015"><h2  class="y_click">2015년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">2월</li>
+					<li class="font_b">알라딘X열린책들 특별제작 세계문학 무료 eBook 선보여 </li>
+<li>알라딘은 열린책들 출판사와 공동으로 특별제작한 세계문학 무료 eBook '깨끗하고 
+불빛 환한 방'을 선보였습니다. 알라딘은 이후로도 민음사, 웅진 등과 손을 잡고
+퀄리티 높은 무료 eBook을 선보여 많은 고객분들의 사랑을 받았습니다.</li>
+					<li class="font_b">일산점에서 샤이니 'Your Number' 뮤직비디오 촬영</li>
+<li>알라딘 중고매장 일산점에서 샤이니의 'Your Number' 일본 활동용 뮤직비디오 
+촬영이 있었습니다.</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">장르소설 증정품 '셜록 / 오버룩호텔' 키홀더 및 고양이 낸시 머그 돌풍</li>
+<li>장르소설 증정품으로 제작된 셜록 홈즈의 집 주소가 적힌 키홀더 및 스티븐킹의 소설
+'샤이닝'에 등장하는 오버룩 호텔 키홀더가 선풍적인 인기를 얻어 품절되는 일이 있었
+습니다. 트위터에서의 팬덤이 강했던 '고양이 낸시' 1+1 증정용 머그 역시 공개 12시간
+만에 한달 준비수량이 모두 동나는 등 이례적인 인기를 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2015 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2014"><h2  class="y_click">2014년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">알라딘 중고매장 수원점 오픈</li>
+					<li>1월 13일 알라딘 중고매장 수원점이 수원역 부근에 문을 열었습니다.</li>
+					<li class="font_b">2014 연하장 발송 </li>
+					<li>늘 함께해주시는 고객님들께 감사하는 마음을 담아 연하장을 발송했습니다.</li>
+					<li class="font_m">6월</li>
+					<li class="font_b">마일리지 전환 최소 금액 5천원에서 10원으로 변경 </li>
+					<li>마일리지 전환 최소 금액을 5천원에서 10원으로 변경했습니다. 이제 쌓이는 즉시 바로 바로 적립금으로 바꿔 다음 주문에 사용할 수 있습니다.</li>
+					<li class="font_b">알라딘 중고매장 노원점 오픈</li>
+					<li>5월 24일 알라딘 중고매장 노원점이 노원 문화의 거리에 문을 열었습니다.</li>
+					<li class="font_b">서비스 품질지수 인터넷 서점 부문 5년째 1위</li>
+					<li>한국 표준협회에서 주관하는 서비스 품질지수(KS-SQI) 인터넷 서점 부문 최우수 기업으로 5년째 선정되었습니다.</li>
+					<li class="font_m">7월</li>
+					<li class="font_b">7알라딘 15주년 증정품 보틀 제작 </li>
+					<li>알라딘 서비스 오픈 15주년 기념으로 제작한 증정품인 까뮈, 보르헤스, 헤밍웨이 보틀이 고객분들로부터 큰 사랑을 받았습니다!</li>
+					<li class="font_b">15주년, 당신의 기록!</li>
+					<li>알라딘 서비스 오픈 15주년을 맞아 고객 여러분의 지난 알라딘에서의 독서 패턴을 정리한 서비스 '15주년, 당신의 기록'을 선보여 많은 고객분들로부터 좋은 반응을 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2014 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2013"><h2  class="y_click">2013년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">알라딘 중고매장 수원점 오픈</li>
+					<li>1월 13일 알라딘 중고매장 수원점이 수원역 부근에 문을 열었습니다.</li>
+					<li class="font_b">2014 연하장 발송 </li>
+					<li>늘 함께해주시는 고객님들께 감사하는 마음을 담아 연하장을 발송했습니다.</li>
+					<li class="font_m">6월</li>
+					<li class="font_b">마일리지 전환 최소 금액 5천원에서 10원으로 변경 </li>
+					<li>마일리지 전환 최소 금액을 5천원에서 10원으로 변경했습니다. 이제 쌓이는 즉시 바로 바로 적립금으로 바꿔 다음 주문에 사용할 수 있습니다.</li>
+					<li class="font_b">알라딘 중고매장 노원점 오픈</li>
+					<li>5월 24일 알라딘 중고매장 노원점이 노원 문화의 거리에 문을 열었습니다.</li>
+					<li class="font_b">서비스 품질지수 인터넷 서점 부문 5년째 1위</li>
+					<li>한국 표준협회에서 주관하는 서비스 품질지수(KS-SQI) 인터넷 서점 부문 최우수 기업으로 5년째 선정되었습니다.</li>
+					<li class="font_m">7월</li>
+					<li class="font_b">7알라딘 15주년 증정품 보틀 제작 </li>
+					<li>알라딘 서비스 오픈 15주년 기념으로 제작한 증정품인 까뮈, 보르헤스, 헤밍웨이 보틀이 고객분들로부터 큰 사랑을 받았습니다!</li>
+					<li class="font_b">15주년, 당신의 기록!</li>
+					<li>알라딘 서비스 오픈 15주년을 맞아 고객 여러분의 지난 알라딘에서의 독서 패턴을 정리한 서비스 '15주년, 당신의 기록'을 선보여 많은 고객분들로부터 좋은 반응을 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2013 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2012"><h2  class="y_click">2012년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">알라딘 중고매장 수원점 오픈</li>
+					<li>1월 13일 알라딘 중고매장 수원점이 수원역 부근에 문을 열었습니다.</li>
+					<li class="font_b">2014 연하장 발송 </li>
+					<li>늘 함께해주시는 고객님들께 감사하는 마음을 담아 연하장을 발송했습니다.</li>
+					<li class="font_m">6월</li>
+					<li class="font_b">마일리지 전환 최소 금액 5천원에서 10원으로 변경 </li>
+					<li>마일리지 전환 최소 금액을 5천원에서 10원으로 변경했습니다. 이제 쌓이는 즉시 바로 바로 적립금으로 바꿔 다음 주문에 사용할 수 있습니다.</li>
+					<li class="font_b">알라딘 중고매장 노원점 오픈</li>
+					<li>5월 24일 알라딘 중고매장 노원점이 노원 문화의 거리에 문을 열었습니다.</li>
+					<li class="font_b">서비스 품질지수 인터넷 서점 부문 5년째 1위</li>
+					<li>한국 표준협회에서 주관하는 서비스 품질지수(KS-SQI) 인터넷 서점 부문 최우수 기업으로 5년째 선정되었습니다.</li>
+					<li class="font_m">7월</li>
+					<li class="font_b">7알라딘 15주년 증정품 보틀 제작 </li>
+					<li>알라딘 서비스 오픈 15주년 기념으로 제작한 증정품인 까뮈, 보르헤스, 헤밍웨이 보틀이 고객분들로부터 큰 사랑을 받았습니다!</li>
+					<li class="font_b">15주년, 당신의 기록!</li>
+					<li>알라딘 서비스 오픈 15주년을 맞아 고객 여러분의 지난 알라딘에서의 독서 패턴을 정리한 서비스 '15주년, 당신의 기록'을 선보여 많은 고객분들로부터 좋은 반응을 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2012 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2011"><h2  class="y_click">2011년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">알라딘 중고매장 수원점 오픈</li>
+					<li>1월 13일 알라딘 중고매장 수원점이 수원역 부근에 문을 열었습니다.</li>
+					<li class="font_b">2014 연하장 발송 </li>
+					<li>늘 함께해주시는 고객님들께 감사하는 마음을 담아 연하장을 발송했습니다.</li>
+					<li class="font_m">6월</li>
+					<li class="font_b">마일리지 전환 최소 금액 5천원에서 10원으로 변경 </li>
+					<li>마일리지 전환 최소 금액을 5천원에서 10원으로 변경했습니다. 이제 쌓이는 즉시 바로 바로 적립금으로 바꿔 다음 주문에 사용할 수 있습니다.</li>
+					<li class="font_b">알라딘 중고매장 노원점 오픈</li>
+					<li>5월 24일 알라딘 중고매장 노원점이 노원 문화의 거리에 문을 열었습니다.</li>
+					<li class="font_b">서비스 품질지수 인터넷 서점 부문 5년째 1위</li>
+					<li>한국 표준협회에서 주관하는 서비스 품질지수(KS-SQI) 인터넷 서점 부문 최우수 기업으로 5년째 선정되었습니다.</li>
+					<li class="font_m">7월</li>
+					<li class="font_b">7알라딘 15주년 증정품 보틀 제작 </li>
+					<li>알라딘 서비스 오픈 15주년 기념으로 제작한 증정품인 까뮈, 보르헤스, 헤밍웨이 보틀이 고객분들로부터 큰 사랑을 받았습니다!</li>
+					<li class="font_b">15주년, 당신의 기록!</li>
+					<li>알라딘 서비스 오픈 15주년을 맞아 고객 여러분의 지난 알라딘에서의 독서 패턴을 정리한 서비스 '15주년, 당신의 기록'을 선보여 많은 고객분들로부터 좋은 반응을 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2011 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2010"><h2  class="y_click">2010년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">알라딘 중고매장 수원점 오픈</li>
+					<li>1월 13일 알라딘 중고매장 수원점이 수원역 부근에 문을 열었습니다.</li>
+					<li class="font_b">2014 연하장 발송 </li>
+					<li>늘 함께해주시는 고객님들께 감사하는 마음을 담아 연하장을 발송했습니다.</li>
+					<li class="font_m">6월</li>
+					<li class="font_b">마일리지 전환 최소 금액 5천원에서 10원으로 변경 </li>
+					<li>마일리지 전환 최소 금액을 5천원에서 10원으로 변경했습니다. 이제 쌓이는 즉시 바로 바로 적립금으로 바꿔 다음 주문에 사용할 수 있습니다.</li>
+					<li class="font_b">알라딘 중고매장 노원점 오픈</li>
+					<li>5월 24일 알라딘 중고매장 노원점이 노원 문화의 거리에 문을 열었습니다.</li>
+					<li class="font_b">서비스 품질지수 인터넷 서점 부문 5년째 1위</li>
+					<li>한국 표준협회에서 주관하는 서비스 품질지수(KS-SQI) 인터넷 서점 부문 최우수 기업으로 5년째 선정되었습니다.</li>
+					<li class="font_m">7월</li>
+					<li class="font_b">7알라딘 15주년 증정품 보틀 제작 </li>
+					<li>알라딘 서비스 오픈 15주년 기념으로 제작한 증정품인 까뮈, 보르헤스, 헤밍웨이 보틀이 고객분들로부터 큰 사랑을 받았습니다!</li>
+					<li class="font_b">15주년, 당신의 기록!</li>
+					<li>알라딘 서비스 오픈 15주년을 맞아 고객 여러분의 지난 알라딘에서의 독서 패턴을 정리한 서비스 '15주년, 당신의 기록'을 선보여 많은 고객분들로부터 좋은 반응을 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2010 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2009"><h2  class="y_click">2009년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">알라딘 중고매장 수원점 오픈</li>
+					<li>1월 13일 알라딘 중고매장 수원점이 수원역 부근에 문을 열었습니다.</li>
+					<li class="font_b">2014 연하장 발송 </li>
+					<li>늘 함께해주시는 고객님들께 감사하는 마음을 담아 연하장을 발송했습니다.</li>
+					<li class="font_m">6월</li>
+					<li class="font_b">마일리지 전환 최소 금액 5천원에서 10원으로 변경 </li>
+					<li>마일리지 전환 최소 금액을 5천원에서 10원으로 변경했습니다. 이제 쌓이는 즉시 바로 바로 적립금으로 바꿔 다음 주문에 사용할 수 있습니다.</li>
+					<li class="font_b">알라딘 중고매장 노원점 오픈</li>
+					<li>5월 24일 알라딘 중고매장 노원점이 노원 문화의 거리에 문을 열었습니다.</li>
+					<li class="font_b">서비스 품질지수 인터넷 서점 부문 5년째 1위</li>
+					<li>한국 표준협회에서 주관하는 서비스 품질지수(KS-SQI) 인터넷 서점 부문 최우수 기업으로 5년째 선정되었습니다.</li>
+					<li class="font_m">7월</li>
+					<li class="font_b">7알라딘 15주년 증정품 보틀 제작 </li>
+					<li>알라딘 서비스 오픈 15주년 기념으로 제작한 증정품인 까뮈, 보르헤스, 헤밍웨이 보틀이 고객분들로부터 큰 사랑을 받았습니다!</li>
+					<li class="font_b">15주년, 당신의 기록!</li>
+					<li>알라딘 서비스 오픈 15주년을 맞아 고객 여러분의 지난 알라딘에서의 독서 패턴을 정리한 서비스 '15주년, 당신의 기록'을 선보여 많은 고객분들로부터 좋은 반응을 얻었습니다.</li>
+				</ul>
+			</div>
+		</div><!-- a_2009 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2008"><h2  class="y_click">2008년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2008 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2007"><h2  class="y_click">2007년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2007 끝  -->
+
+
+		<div class="h_aa">
+			 <a id="h_2006"><h2  class="y_click">2006년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2006 끝  -->
+
+
+
+		<div class="h_aa">
+			 <a id="h_2005"><h2  class="y_click">2005년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2005 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2004"><h2  class="y_click">2004년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2004 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2003"><h2  class="y_click">2003년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2003 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2002"><h2  class="y_click">2002년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2002 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2001"><h2  class="y_click">2001년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2001 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_2000"><h2  class="y_click">2000년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_2000 끝  -->
+
+		<div class="h_aa">
+			 <a id="h_1999"><h2  class="y_click">1999년</h2></a>
+			<div>
+				<ul>
+					<li class="font_m">1월</li>
+					<li class="font_b">외국도서몰 오픈</li>
+					<li>70만종의 외국도서 컨텐츠 확보, 외국도서 배송시간을 업계 최초 '주문 후 7일'이내로 단축</li>
+					<li class="font_m">2월</li>
+					<li class="font_b">국내 대형 인터넷 서점 최초 "중고샵" 오픈 </li>
+					<li>150만종의 도서/음반/DVD DB 구축, 국내 도서유통 시장에 혁신적 서비스 제안</li>
+					<li class="font_m">3월</li>
+					<li class="font_b">단권 주문 포장시스템 개선 </li>
+					<li>단권 포장에 항공 안전봉투를 도입, 포장안전성 강화 </li>
+					<li class="font_m">5월</li>
+					<li class="font_b">유니세프와 함께 "미얀마/중국 긴급구호 후원 캠페인" 전개 </li>
+					<li class="font_m">7월</li>
+					<li class="font_b">외부사이트/블로그 CPC수익프로그램 "Thanks to Blogger 시즌2" 오픈</li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_b">알라딘 중고샵 라디오 광고 개시 </li>
+					<li>기존 TTB에 클릭당 수익 배분 추가, 알라딘 "TTB"와 "Thank To" 특허등록 완료(2007.12.18)</li>
+					<li class="font_m">8월</li>
+					<li class="font_b">인터넷서점 최초 사이버머니 "알사탕" 서비스 개시</li>
+					<li>도서 구매, 리뷰 작성 등의 고객활동에 대해 실구매력이 있는 사이버머니로 직접 보상</li>
+					<li class="font_m">9월</li>
+					<li class="font_b">모바일 알라딘 서비스 오픈 </li>
+					<li>인터넷 서점 최초, 모바일 기기에서 검색/결제가 가능한 풀브라우징 최적화 서비스 개시</li>
+					<li class="font_m">10월</li>
+					<li class="font_b">아마존식 압축 포장을 개선한 '흔들림없는 에이스포장' 시스템 도입 </li>
+					<li>진공 압축 포장을 통해 박스 내부 흔들림과 모서리 파손 가능성을 최소화 </li>
+					<li class="font_m">12월</li>
+					<li class="font_b">제1회 알라딘 독자 선정 '2008년 올해의 책' 시상식 개최</li>
+				</ul>
+			</div>
+		</div><!-- a_1999 끝  -->
+	</div>
+	</div><!-- h_a 끝 -->
+</div><!-- h_all 끝 -->
+
+
+<!-- footer 영역 -->
+ <? include "footer.html" ?> 
+
+</body>
+</html>

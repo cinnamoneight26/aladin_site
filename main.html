@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>[알라딘]좋은 책을 고르는 방법, 알라딘</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/common.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/main_style.css" media="all">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script>
+	$(function(){ //jQuery 시작
+
+/* partner  클릭 영역 */
+		var cnt = 0; //버튼 넘기는 횟수. 처음에는 0 이므로 0으로 지정
+		var imgLen = 9; //한번에 보여지는 썸네일 갯수
+		var imgWidth = $('.container > ul > li').width() + 5; // 목록 이미지 가로길이 + 왼쪽 마진 5px
+		var visual = $('.container > ul > li')
+		var containWidth = $('div.container').width(); // 작은 이미지 목록 5개가 보여지는 영역 가로 사이즈
+		var maxSize = $('.container > ul > li').size(); // 작은 이미지 목록 총 갯수
+		var moveX; // 이미지가 이동되는 위치값
+		var setIntervalID;
+		
+		$('div.right').click(function(){
+			if(cnt < maxSize-imgLen) cnt++;
+			moveX = imgWidth*cnt*-1;
+		$('.container > ul').stop().animate({left:moveX}, 400, 'easeOutCubic')
+		});
+		$('div.left').click(function(){
+			if(cnt > 0) cnt--;
+			moveX = imgWidth*cnt*-1;
+		$('.container > ul').stop().animate({left:moveX}, 400, 'easeOutCubic')
+		});
+
+/* partner 자동 영역 */
+		timer();
+		function timer(){
+			setIntervalID = setInterval(function(){
+
+				
+						if(cnt < maxSize-imgLen) {cnt++;}else{cnt=0;}
+			moveX = imgWidth*cnt*-1;
+
+		$('.container > ul').stop().animate({left:moveX}, 400, 'easeOutCubic')
+			},2000);
+		};
+
+
+		$("#thumbnail").mouseenter(function(){
+						clearInterval(setIntervalID);
+		}).mouseleave(function(){
+			timer();
+		});
+
+
+
+
+	});//jQuery 종료
+  </script>
+
+
+<!--새창크기정의-->
+<script type="text/javascript">
+function openit() {
+newWindow = window.open('http://www.aladin.co.kr/login/wlogin_popup.aspx', '로그인', 'width=780,height=444');
+}
+</script>
+
+</head>
+<body>
+<!-- header 영역 -->	
+  <? include "header.html" ?> 
+<!-- header 끝 -->
+
+<!-- main nav 영역 -->
+<nav id="main_nav">
+	<div id="main_div">
+		<ul id="main_nav_ul">
+			<li><a href="outline.html" title="개요">개요</a></li>
+			<li><a href="vision.html" title="비전">비전</a></li>
+			<li><a href="history.html" title="연혁">연혁</a></li>
+			<li><a href="ci.html" title="CI 소개">CI 소개</a></li>
+			<li><a href="service.html" title="서비스 소개">서비스 소개</a></li>
+			<li><a href="#" title="언론 기사">언론 기사</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- img 영역 -->
+<div id="img">
+	<img src="images/mainpage_img/main_img.png" width="1200" height="400" alt="‘알라딘’이 소원을 빌면 램프에서 요정이 나와 꿈을 이루어 줍니다. 
+	‘알라딘’이라는 브랜드에는 고객의 꿈을 이루어드리고자 하는 기업정신이 담겨 있습니다.">
+</div><!-- id img 끝 -->
+
+<!-- content 영역 -->
+	<div id="content">
+		<div id="l_content">
+			<div id="oldshop"><h3><a href="http://www.aladin.co.kr/home/wusedshopmain.aspx" target="_blank">중고 매장</a></h3></div>
+
+			<div id="_oldshop_">
+			<a href="http://www.aladin.co.kr/home/wusedshopmain.aspx" target="_blank">
+			<img src="images/mainpage_img/book1.png" width="600" height="110" alt="전국 각지에서 만날 수 있는 알라딘 중고매장">
+			</a></div><!--_oldshop_  -->
+		
+		<div id="smo_line">
+			<div id="oneclick">
+				<a href="http://used.aladin.co.kr/shop/usedshop/wc2b_sales.aspx?C2BSalesType=4" target="_blank">
+				<img src="images/mainpage_img/main_05.png" width="256" height="84" alt="원클릭 중고팔기 바로가기"></a>
+			</div><!-- 원클릭 중고팔기 -->
+
+			<div id="findshop">
+				<p>중고 매장 위치 / 재고 찾기</p>
+				
+				<p><select name="매장 찾기">
+					<option value="" selected>- 매장을 선택해주세요</option>
+					<option value="">- 강남점</option>
+					<option value="">- 건대점</option>
+					<option value="">- 광주점</option>
+					<option value="">- 노원점</option>
+					<option value="">- 대구점</option>
+					<option value="">- 대전점</option>
+					<option value="">- 대학로점</option>
+					<option value="">- 부산점</option>
+					<option value="">- 부천점</option>
+					<option value="">- 분당점</option>
+					<option value="">- 산본점</option>
+					<option value="">- 수원점</option>
+					<option value="">- 신림점</option>
+					<option value="">- 신촌점</option>
+					<option value="">- 울산점</option>
+					<option value="">- 일산점</option>
+					<option value="">- 잠실신천점</option>
+					<option value="">- 전주점</option>
+					<option value="">- 종로점</option>
+					<option value="">- 청주점</option>
+					<option value="">- 천안점</option>
+				</select>
+				<div id="m_icon"><img src="images/icon/mainpage_icon/placeholder8.png" alt="중고매장 찾기">
+				</div>
+				<!--m_icon 끝  -->
+			</div><!-- 중고매장 찾기 -->
+
+		</div><!-- smo_line 끝 -->
+
+			<div id="qg">
+			<a href="http://used.aladin.co.kr/events/wevent_usedshop.aspx?pn=140530_usedshop_end&idx=1#dw" target="_blank">
+				 <img src="images/mainpage_img/main_24t.png" width="600" height="60" alt="중고 품질 판정 기준"></a>
+			</div>
+		</div><!-- id l_content 끝 -->
+
+
+		<div id="r_content">
+			<div id="notice_all">
+				<div id="notice">
+					<h3><a href="http://blog.aladin.co.kr/cscenter/category/16145892?communitytype=MyPaper" target="_blank">공지사항</a></h3>
+				</div><!-- notice 끝 -->
+				<div class="more"><a href="http://blog.aladin.co.kr/cscenter/category/16145892?communitytype=MyPaper" target="_blank">&gt;&nbsp;more</a></div>
+			</div><!-- notice_all 끝 -->
+				<div id="notice_a">
+					<ul>
+						<li><a href="http://blog.aladin.co.kr/cscenter/8132174">[공지] 행운의 마일리지 서비스 종료 안내(2016년 1월 15일부)</a></li>
+						<li><a href="http://blog.aladin.co.kr/cscenter/8110742">[공지] 1월 1일(금)-1월 3일(일) 휴무 및 출고,배송 일정</a></li>
+						<li><a href="http://blog.aladin.co.kr/cscenter/8093501">[공지] 12월 26일(토) 당일배송 휴무 및 주말 주문 출고,배송 일정</a></li>
+						<li><a href="http://blog.aladin.co.kr/cscenter/8070855">[공지] 직수입원서 출고지연 예상(연말 연시 주문)</a></li>
+					</ul>
+				</div><!-- notice_a 끝 -->
+			
+				
+		<div id="cs">
+				<div><a href="https://www.aladin.co.kr/cs_center/wcs_ConsultQS.aspx" target="_blank"><img src="images/mainpage_img/main_cs1.png" width="180" height="180" alt="1:1고객상담"></a><span><a href="https://www.aladin.co.kr/cs_center/wcs_ConsultQS.aspx" target="_blank"> 1:1고객 상담</a></span></div>
+
+				<div><img src="images/mainpage_img/main_cs2.png" width="180" height="180" alt="ARS 전화상담"> 
+					<span>ARS 전화상담</span>
+				    <span>일반</span>
+					<span>1544-2514</span>
+					<span>중고서점 해피콜</span>
+					<span>02-364-8947</span>
+				</div>
+
+				<div><img src="images/mainpage_img/main_cs3.png" width="180" height="180" alt="근무시간 안내">
+				<span>근무 시간 안내</span>
+				<span>평일</span>
+				<span>09:00 ~ 18:00</span>
+				<span>점심시간 12:00 ~ 13:00</span>
+				<span>토요일/일요일/공휴일 휴무</span>
+				</div>
+			
+		</div><!-- cs 끝 -->
+		</div><!-- r_content 끝 -->
+
+
+<!-- 파트너사 영역 -->
+		<div id="partner">
+			<div id="thumbnail">
+				<div class="left">
+					<span><img src="images/icon/mainpage_icon/chevron24.png" width="32" height="32" alt="이전"></span>
+				</div><!-- left -->
+
+				<div class="container">
+					<ul>
+						<li><img src="images/partner/n_partner01.gif" width="112" height="37" alt="파트너 1"></li>
+						<li><img src="images/partner/n_partner02.gif" width="112" height="37" alt="파트너 2"></li>
+						<li><img src="images/partner/n_partner03.gif" width="112" height="37" alt="파트너 3"></li>
+						<li><img src="images/partner/n_partner04.gif" width="112" height="37" alt="파트너 4"></li>
+						<li><img src="images/partner/n_partner05.gif" width="112" height="37" alt="파트너 5"></li>
+						<li><img src="images/partner/n_partner06.gif" width="112" height="37" alt="파트너 6"></li>
+						<li><img src="images/partner/n_partner07.gif" width="112" height="37" alt="파트너 7"></li>
+						<li><img src="images/partner/n_partner08.gif" width="112" height="37" alt="파트너 8"></li>
+						<li><img src="images/partner/n_partner09.gif" width="112" height="37" alt="파트너 9"></li>
+						<li><img src="images/partner/n_partner10.gif" width="112" height="37" alt="파트너 10"></li>
+						<li><img src="images/partner/n_partner11.gif" width="112" height="37" alt="파트너 11"></li>
+						<li><img src="images/partner/n_partner12.gif" width="112" height="37" alt="파트너 12"></li>
+						<li><img src="images/partner/n_partner13.gif" width="112" height="37" alt="파트너 13"></li>
+						<li><img src="images/partner/n_partner14.gif" width="112" height="37" alt="파트너 14"></li>
+						<li><img src="images/partner/n_partner15.gif" width="112" height="37" alt="파트너 15"></li>
+						<li><img src="images/partner/n_partner16.gif" width="112" height="37" alt="파트너 16"></li>
+						<li><img src="images/partner/n_partner17.gif" width="112" height="37" alt="파트너 17"></li>
+						<li><img src="images/partner/n_partner18.gif" width="112" height="37" alt="파트너 18"></li>
+						<li><img src="images/partner/n_partner19.gif" width="112" height="37" alt="파트너 19"></li>
+						<li><img src="images/partner/n_partner20.gif" width="112" height="37" alt="파트너 20"></li>
+						<li><img src="images/partner/n_partner21.gif" width="112" height="37" alt="파트너 21"></li>
+						<li><img src="images/partner/n_partner22.gif" width="112" height="37" alt="파트너 22"></li>
+						<li><img src="images/partner/n_partner23.gif" width="112" height="37" alt="파트너 23"></li>
+						<li><img src="images/partner/n_partner24.gif" width="112" height="37" alt="파트너 24"></li>
+						<li><img src="images/partner/n_partner25.gif" width="112" height="37" alt="파트너 25"></li>
+						<li><img src="images/partner/n_partner26.gif" width="112" height="37" alt="파트너 26"></li>
+						<li><img src="images/partner/n_partner27.gif" width="112" height="37" alt="파트너 27"></li>
+						<li><img src="images/partner/n_partner28.gif" width="112" height="37" alt="파트너 28"></li>
+					</ul>
+				</div><!-- container  -->
+
+				<div class="right">
+					<span><img src="images/icon/mainpage_icon/chevron19.png" width="32" height="32" alt="다음"></span>			
+				</div><!-- right  -->
+
+			</div><!-- thumbnail 끝  -->
+
+		</div><!-- partner 끝 -->
+
+
+	</div><!-- id content 끝 -->
+	
+<!-- footer 영역 -->
+ <? include "footer.html" ?> 
+
+</body>
+</html>

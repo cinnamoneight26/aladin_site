@@ -1,0 +1,142 @@
+/*----------------------------768px~ 화면*/
+
+@media screen and (min-width:768px)
+{
+
+/* 메뉴바 영역*/
+#main_nav {background:#2483c4; min-width:1200px;}
+#main_div {width:1200px; margin:0 auto; height:60px;}
+#main_nav_ul {text-align:center; overflow:hidden;}
+#main_nav_ul > li {float:left; font-size:14pt;  width:16.66%;}
+#main_nav_ul > li:nth-of-type(2) {background:rgba(255,255,255,0.8);}
+#main_nav_ul > li:nth-of-type(2) a{color:#2483c4;}
+#main_nav_ul > li > a {display:block; color:#fff; line-height:60px; font-weight:bold;}
+#main_nav_ul > li:hover > a {background:rgba(255,255,255,0.8); color:#2483c4;}
+
+/* 상단 가이드바 영역 */
+#vision_all {}
+#line {min-width:1200px;  background:#fff; height:50px; }
+h1 {height:50px; line-height:50px; width:1200px; margin:0 auto; font-size:16px; color:#2483c4; display:block;font-weight:bold;}
+h1 a {color:#2483c4;}
+
+/* 본문 영역*/
+#vision {width:1200px; margin:0 auto; margin-top:10px; margin-bottom:10px;}
+#vision li:first-child {color:#80c931; font-weight:bold; font-size:16px;}
+
+#business1 {overflow:hidden; border-bottom:1px dotted #464646; position:relative;}
+#business1 > div {float:left;}
+#business1 > div:nth-of-type(2) {font-size:16px; color:#464646; text-align:center; width:200px; font-weight:bold;
+								line-height:30px;  padding-top:32px;}
+#business1 > div:nth-of-type(3) {width:55%; font-size:14px; margin:10px 0; line-height:30px;}
+#vs1 {height:128px;  width:128px; margin:10px 0 10px 150px; background-image:url('../images/icon/subpage_icon/marketing8.png');}
+
+
+#business2 {overflow:hidden; border-bottom:1px dotted #464646; position:relative;}
+#business2> div {float:left;}
+#business2 > div:nth-of-type(2) {font-size:16px; color:#464646; text-align:center;  width:200px;  font-weight:bold;
+								line-height:30px;  padding-top:32px;}
+#business2 > div:nth-of-type(3) {width:55%; font-size:14px; margin:10px 0; line-height:30px;}
+#vs2 {height:128px;  width:128px; margin:10px 0 10px 150px; background-image:url('../images/icon/subpage_icon/financial.png');}
+
+#business3 {overflow:hidden; border-bottom:1px dotted #464646;}
+#business3 > div {float:left;}
+#business3 > div:nth-of-type(2) {font-size:16px; color:#464646; text-align:center;  width:200px;  font-weight:bold;
+								line-height:30px;  padding-top:32px;}
+#business3 > div:nth-of-type(3) {width:55%; font-size:14px; margin:10px 0; line-height:30px;}
+#vs3 {height:128px;  width:128px; margin:70px 0 10px 150px; background-image:url('../images/icon/subpage_icon/chat28.png');}
+
+#business4 {overflow:hidden;}
+#business4 > div {float:left;}
+#business4 > div:nth-of-type(2) {font-size:16px; color:#464646; text-align:center;  width:200px;  font-weight:bold;
+								line-height:30px; padding-top:32px;}
+#business4 > div:nth-of-type(3) {width:55%; font-size:14px; margin:10px 0; line-height:30px;}
+#vs4 {height:128px;  width:128px; margin:40px 0 10px 150px; background-image:url('../images/icon/subpage_icon/agreement.png');}
+
+}
+
+
+/*미디어 쿼리---------------------------------------------------------------------------  */
+/*-------------------------------------------0~767px 화면*/
+
+@media screen and (max-width:767px)
+{
+
+
+/* 초기화 */
+* {margin:0; padding:0;}
+body {font-family: 'Nanum Gothic', sans-serif;}
+li {list-style:none; border:0px;}
+a {text-decoration:none;}
+img {border:0;}
+
+/*모바일 메뉴 영역*/
+#main_nav {background:#2483c4; min-width:320px; width:100%; margin:0 auto;}
+
+#main_div {width:100%; height:auto;}
+
+#main_nav_ul {text-align:center; padding:0; margin:0; overflow:hidden;}
+#main_nav_ul  li {height:40px; display:block; float:left;}
+
+#main_nav_ul > li:first-child {width:33.33%;}
+#main_nav_ul > li:nth-of-type(2) {width:33.33%;}
+#main_nav_ul > li:nth-of-type(2) a {display:block;background:rgba(255,255,255,0.8); color:#2483c4;}
+#main_nav_ul > li:nth-of-type(3) {width:33.33%;}
+#main_nav_ul > li:nth-of-type(4) {width:33.33%;}
+#main_nav_ul > li:nth-of-type(5) {width:33.33%;}
+#main_nav_ul > li:last-child {width:33.33%;}
+
+#main_nav_ul > li > a {color:#fff; font-size:16px; line-height:40px; text-decoration:none; font-weight:bold;}
+#main_nav_ul > li:hover > a {color:#fff; font-size:16px; line-height:40px; text-decoration:none;}
+
+
+
+/* 상단 가이드바 영역 */
+
+#line {display:none;}
+
+/* 본문 영역*/
+#vision {min-width:320px; max-width:767px; width:100%; height:auto;
+		margin:0 auto;}
+#vision li:first-child {color:#80c931;}
+#vision li {vertical-align:middle; text-align:center;}
+
+#business1 > div:nth-of-type(2) {color:#464646; text-align:center; width:80%; font-weight:bold;
+								line-height:30px; font-size:16px; margin:0 auto;}
+#business1 > div:nth-of-type(3) {width:80%; margin:10px auto 50px; line-height:30px;}
+#vs1 {height:128px;  width:128px; margin:30px auto; background-image:url('../images/icon/subpage_icon/marketing8.png');}
+
+
+
+#business2 > div:nth-of-type(2) {color:#464646; text-align:center; width:80%; font-weight:bold;
+								line-height:30px; font-size:16px;  margin:0 auto;}
+#business2 > div:nth-of-type(3) {width:80%; margin:10px auto 50px; line-height:30px;}
+#vs2 {height:128px;  width:128px; margin:30px auto; background-image:url('../images/icon/subpage_icon/financial.png');}
+
+
+#business3 > div:nth-of-type(2) {color:#464646; text-align:center;  width:80%;  font-weight:bold;
+							     line-height:30px; font-size:16px; margin:0 auto;}
+#business3 > div:nth-of-type(3) {width:80%; margin:10px auto 50px; line-height:30px;}
+#vs3 {height:128px;  width:128px; margin:30px auto; background-image:url('../images/icon/subpage_icon/chat28.png');}
+
+
+#business4 > div:nth-of-type(2) {color:#464646; text-align:center;  width:80%;  font-weight:bold;
+								line-height:30px; font-size:16px; margin:0 auto;}
+#business4 > div:nth-of-type(3) {width:80%; margin:10px auto 50px; line-height:30px;}
+#vs4 {height:128px;  width:128px; margin:30px auto; background-image:url('../images/icon/subpage_icon/agreement.png');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
